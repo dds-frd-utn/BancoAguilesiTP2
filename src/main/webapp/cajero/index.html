@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+
+        <meta charset="UTF-3">
+        <title>Sign-in</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="text-center">
+        <div action=""style="width:300px; margin:0 auto; " id="sign-in">
+            <img class="mb-4" src="/logoAguilesi.jpg" alt="" width="72" height="72">
+            <h1 class="h1 mb-3 font-weight-normal">Banco Aguilesi</h1>
+            <h1 class="h4 mb-3 font-weight-normal">Por favor, ingrese:</h1>
+            <input type="id" id="idCliente" class="form-control" placeholder="ID Cliente" autofocus>
+            <input type="password" id="inputContraseña" class="form-control" placeholder="Constraseña">
+            <button class="btn btn-primary btn-block" type="submit" id="button">Ingresar</button>
+            <p class="mt-5 mb-3 text-muted">&copy; Derechos reservados Banco Aguilesi</p>
+        </div>
+        <div>
+            <ul id="lista"></ul>
+        </div>
+    <body class="text-center" >
+        <div style="width:800px; margin:0 auto;display:none" id="cuerpo" >
+            <img class="mb-4" src="http://www.banco-solidario.com/media/1384/banner_cuentas-01.jpg" alt="" width="800" height="200">
+            <h1 class="h1 mb-3 font-weight-normal">Banco Aguilesi</h1>
+            <h1 class="h5 mb-3 font-weight-normal">Ingrese su número de cliente:</h1>
+            <button class="btn btn-primary btn-block" type="submit" id="b_cuentas">Consultar cuentas asociadas</button>
+            <ul id="cuentas"></ul>
+            <h1 class="h5 mb-3 font-weight-normal">Ingrese el nro de cuenta:</h1>
+            <input type="id" id="idCuenta" class="form-control" placeholder="Id Cuenta">
+            <button class="btn btn-primary btn-block" type="submit" id="b_movimientos">Ultimos movimientos</button>
+            <ul id="movimientos"></ul>
+            <button class="btn btn-primary btn-block" type="submit" id="b_saldo">Saldo</button>          
+            <ul id="saldo">
+            </ul>
+            <input type="id" id="c_deposito" class="form-control" placeholder="Ingresar monto a depositar" required>
+            <button class="btn btn-primary btn-block" type="submit" id="b_deposito">Depositar</button>
+            <input type="id" id="c_extraccion" class="form-control" placeholder="Ingrese monto a extraer" required>
+            <button class="btn btn-primary btn-block" type="submit" id="b_extraccion">Extraer</button>
+            
+            
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="sign-in.2.js"></script>
+    </body>
+    </html>

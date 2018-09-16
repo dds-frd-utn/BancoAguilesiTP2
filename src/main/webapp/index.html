@@ -1,0 +1,64 @@
+<!--<body style="background-color:lightblue;"><h1 style="text-align: center;"><span style="text-align: center; color: #666699;"><strong>&nbsp;Bienvenidos a Banco Aguilesi</strong></span></h1>
+<h4 style="text-align: left;"><span style="text-align: center; color: #800080;"><strong><img src="http://www.banco-solidario.com/media/1384/banner_cuentas-01.jpg" alt="" width="1400" height="400" /></strong></span>&nbsp;Para acceder a la informacion de un cliente ingrese a:</h4>
+<p style="text-align: center;"><a href="http://localhost:8080/Aguilesi/rest/cliente/{IdCliente}">http://localhost:8080/Aguilesi/rest/cliente/{IdCliente}</a></p>
+<h4>&nbsp;Para acceder las cuentas ascociadas a un cliente:</h4>
+<p style="text-align: center;"><a href="http://localhost:8080/Aguilesi/rest/cliente/{IdCliente}">http://localhost:8080/Aguilesi/rest/cuenta/deCliente/{IdCliente}</a></p>
+<h4>Para acceder a los movimientos de una cuenta ingrese a:</h4>
+<p style="text-align: center;"><a href="http://localhost:8080/Aguilesi/rest/cliente/{IdCliente}">http://localhost:8080/Aguilesi/rest/movimientos/deCuenta/{IdCliente}</a></p>
+<h4>Para acceder a los movimientos de una cuenta ingrese a:</h4>
+<p>&nbsp;</p>
+<p><a href="http://localhost:8080/Aguilesi/rest/cliente/{IdCliente}">http://localhost:8080/Aguilesi/rest/cliente/{IdCliente}</a></p>
+<p>Para crear un nuevo movimientooooooooooooooooooooooooo , hacer una peticion post en la siguiente direccion <a href="http://localhost:8080/Aguilesi/rest/cliente/{IdCliente}">http://localhost:8080/Aguilesi/rest/m</a>ovimiento/ con la siguiente estructura:</p>
+<p style="line-height: 10%;"><strong><sub>{"creado":,</sub></strong></p>
+<p style="line-height: 10%;"><strong><sub>"descripcion":"extraccion",</sub></strong></p>
+<p style="line-height: 10%;"><strong><sub>"estado":2,</sub></strong></p>
+<p style="line-height: 10%;"><strong><sub>"id":1,</sub></strong></p>
+<p style="line-height: 10%;"><strong><sub>"idCuentaA":1,</sub></strong></p>
+<p style="line-height: 10%;"><strong><sub>"importe":200.0,</sub></strong></p>
+<p style="line-height: 10%;"><strong><sub>tipo":1}</sub></strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;"><span style="text-align: center; color: #800080;"><strong>Diagrama de Clases</strong></span></h2>
+<p><span style="text-align: center; color: #800080;"><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="https://preview.ibb.co/f90Y4H/Tp1.jpg" alt="" width="640" height="368" /></strong></span></p>
+-->
+
+<body style="background-color:lightblue;">
+<p>&nbsp;</p>
+<h1 style="text-align: center;"><span style="text-align: center; color: #666699;"><strong>&nbsp;Bienvenidos a Banco Aguilesi</strong></span></h1>
+<p><span style="text-align: center; color: #666699;"><strong><img src="http://www.banco-solidario.com/media/1384/banner_cuentas-01.jpg?anchor=center&amp;mode=crop&amp;width=1400&amp;height=400&amp;rnd=130930362050000000" alt="" width="1400" height="400" /></strong></span></p>
+<h4 style="text-align: left;">&nbsp; Para acceder a la informacion de un cliente ingrese a:</h4>
+<p style="text-align: center;"><strong><a href="http://localhost:8080/Aguilesi/rest/cliente/{IdCliente}">http://localhost:8080/Aguilesi/rest/cliente/{IdCliente}</a></strong></p>
+<h4>&nbsp;Para acceder las cuentas ascociadas a un cliente:</h4>
+<p style="text-align: center;"><strong><a href="http://localhost:8080/Aguilesi/rest/cuenta/deCliente/{IdCliente}">http://localhost:8080/Aguilesi/rest/cuenta/deCliente/{IdCliente}</a></strong></p>
+<h4>Para acceder a los movimientos de una cuenta ingrese a:</h4>
+<p style="text-align: center;"><strong><a href="http://localhost:8080/Aguilesi/rest/movimiento/deCuenta/{IdCliente}">http://localhost:8080/Aguilesi/rest/movimiento/deCuenta/{IdCliente}</a></strong></p>
+<p><strong>Para crear un nuevo movimiento , hacer una peticion POST en la direccion </strong></p>
+<p style="text-align: center;"><strong><a href="http://localhost:8080/Aguilesi/rest/movimiento">http://localhost:8080/Aguilesi/rest/movimiento</a></strong></p>
+<p><strong>o para actualizarlo hacer una peticion PUT en esta otra&nbsp;</strong></p>
+<p style="text-align: center;"><strong><a href="http://localhost:8080/Aguilesi/rest/movimiento/{idMovimiento}">http://localhost:8080/Aguilesi/rest/movimiento/{idMovimiento}</a> </strong></p>
+<p><strong>con la siguiente estructura:</strong></p>
+<p style="line-height: 10%;"><strong><sub>{"creado": </sub></strong><sub>Date</sub></p>
+<p style="line-height: 10%;"><strong><sub>"descripcion": </sub></strong><sub>String</sub></p>
+<p style="line-height: 10%;"><strong><sub>"estado": </sub></strong><sub>Int</sub><strong><sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(1=Pendiente; 2=En Proceso, 3=Procesado, 4=Rechazado)</sub></strong></p>
+<p style="line-height: 10%;"><strong><sub>"idMovimiento": </sub></strong><sub>Int</sub><strong><sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;(No necesario al momento de crear un movimiento)</sub></strong></p>
+<p style="line-height: 10%;"><strong><sub>"idCuenta": </sub></strong><sub>Int</sub><strong><sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(N&deg; de Cuenta)</sub></strong></p>
+<p style="line-height: 10%;"><strong><sub>"importe": </sub></strong><sub>Double</sub></p>
+<p style="line-height: 10%;"><strong><sub>tipo":</sub></strong><sub>Int</sub><strong><sub> }&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (1=Extraccion, 2=Deposito)</sub></strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;<strong>Para obtener el saldo de una cuenta ingrese a:&nbsp;</strong></p>
+<p style="text-align: center;"><strong><a href="http://localhost:8080/Aguilesi/rest/cuenta/saldo/{idCuenta}">http://localhost:8080/Aguilesi/rest/cuenta/saldo/{idCuenta}</a></strong></p>
+<p style="text-align: left;"><strong>Para obtener los movimientos de una cuenta en un estado especifico:</strong></p>
+<p style="text-align: center;"><strong><a href="http://localhost:8080/Aguilesi/rest/movimiento/{IdCuenta}/estado/{IdEstado}">http://localhost:8080/Aguilesi/rest/movimiento/{IdCuenta}/estado/{IdEstado}</a></strong></p>
+<p><strong>Para obtener los movimientos de una cuenta segun una descripcion dada:</strong></p>
+<p style="text-align: center;"><strong><a href="http://localhost:8080/Aguilesi/rest/movimiento/{IdCuenta}/{Descripcion}">http://localhost:8080/Aguilesi/rest/movimiento/{IdCuenta}/{Descripcion}</a></strong></p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;"><span style="text-align: center; color: #800080;"><strong>Diagrama de Clases</strong></span></h2>
+<p><span style="text-align: center; color: #800080;"><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="https://preview.ibb.co/f90Y4H/Tp1.jpg" alt="" width="640" height="368" /></strong></span></p></body>
+
